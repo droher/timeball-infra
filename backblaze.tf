@@ -11,6 +11,6 @@ provider "backblaze" {
   region = "us-west-002"
 }
 
-module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
+resource "aws_s3_bucket" "b" {
+  bucket = "timeball"
 }
