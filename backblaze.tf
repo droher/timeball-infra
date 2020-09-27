@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-provider "aws" {
+provider "backblaze" {
   region = var.backblaze_region
 }
 
