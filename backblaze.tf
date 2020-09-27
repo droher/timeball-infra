@@ -1,5 +1,3 @@
-variable "backblaze_region" {}
-
 terraform {
   required_providers {
     backblaze = {
@@ -10,7 +8,7 @@ terraform {
 }
 
 provider "backblaze" {
-  region = var.backblaze_region
+  region = "us-west-002"
 }
 
 module "s3_bucket" {
