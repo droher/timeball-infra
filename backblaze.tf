@@ -1,3 +1,5 @@
+variable "backblaze_region" {}
+
 terraform {
   required_providers {
     backblaze = {
