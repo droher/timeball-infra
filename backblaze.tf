@@ -14,3 +14,7 @@ provider "backblaze" {
     s3 = "https://s3.us-west-002.backblazeb2.com"
   }
 }
+
+module "s3_bucket" {
+  source = "terraform-aws-modules/s3-bucket/aws"
+}
