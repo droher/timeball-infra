@@ -1,5 +1,4 @@
 provider "aws" {
-  alias = "backblaze"
   region = "us-west-002"
 }
 
