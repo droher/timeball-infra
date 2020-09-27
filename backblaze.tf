@@ -18,6 +18,7 @@ provider "backblaze" {
 resource "aws_s3_bucket" "b" {
   bucket = "my-tf-test-bucket"
   acl    = "private"
+  region = "us-west-002"
 
   tags = {
     Name        = "My bucket"
